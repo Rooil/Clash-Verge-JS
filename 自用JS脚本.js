@@ -1034,42 +1034,42 @@ function overwriteProxyGroups (params) {
         { 
             name: "香港手动", 
             regex: new RegExp(`^(?=.*${includeTerms.HK})(?!.*${excludeTerms}).*$`, "i"), 
-            icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png" 
+            icon: "https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Hong_Kong.png" 
         },
         { 
             name: "日本手动", 
             regex: new RegExp(`^(?=.*${includeTerms.JP})(?!.*${excludeTerms}).*$`, "i"), 
-            icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png" 
+            icon: "https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Japan.png" 
         },
         { 
             name: "韩国手动", 
             regex: new RegExp(`^(?=.*${includeTerms.KR})(?!.*${excludeTerms}).*$`, "i"), 
-            icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png" 
+            icon: "https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/South_Korea.png" 
         },
         { 
             name: "狮城手动", 
             regex: new RegExp(`^(?=.*${includeTerms.SG})(?!.*${excludeTerms}).*$`, "i"), 
-            icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png" 
+            icon: "https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Singapore.png" 
         },
         { 
             name: "美国手动", 
             regex: new RegExp(`^(?=.*${includeTerms.US})(?!.*${excludeTerms}).*$`, "i"), 
-            icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png" 
+            icon: "https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/United_States.png" 
         },
         { 
             name: "台湾手动", 
             regex: new RegExp(`^(?=.*${includeTerms.TW})(?!.*${excludeTerms}).*$`, "i"), 
-            icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png" 
+            icon: "https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/China.png" 
         },
         { 
             name: "下载节点", 
             regex: new RegExp(`^(?=.*${includeTerms.DI})(?!.*${excludeTerms}).*$`, "i"), 
-            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Download.png" 
+            icon: "https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Social_Media/Buzznet.png" 
         },
         { 
             name: "其它地区", 
             regex: new RegExp(`^(?=.*${includeTerms.OT})(?!.*${excludeTerms}).*$`, "i"), 
-            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/World_Map.png" 
+            icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png" 
         },
         
     ];
@@ -1095,7 +1095,7 @@ function overwriteProxyGroups (params) {
         {
             name: "手动切换",
             type: "select",
-            icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Cylink.png",
+            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Static.png",
             proxies: [...allProxies,],
         },
         {
@@ -1119,7 +1119,7 @@ function overwriteProxyGroups (params) {
         {
             name: "故障转移",
             type: "fallback",
-            icon: "https://www.clashverge.dev/assets/icons/ambulance.svg",
+            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png",
             url: "http://www.gstatic.com/generate_204",
             interval: 300,
             tolerance: 50,
@@ -1128,7 +1128,7 @@ function overwriteProxyGroups (params) {
         {
             name: "负载均衡",
             type: "load-balance",
-            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png",
+            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png",
             url: "http://www.gstatic.com/generate_204",
             interval: 300,
             tolerance: 50,
@@ -1152,28 +1152,28 @@ function overwriteProxyGroups (params) {
             name: "特殊",
             type: "select",
             // "include-all": true,
-            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Blackhole.png",
+            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Heart.png",
             proxies: ["节点选择", "手动切换", "日本手动",],
         },
         {
             name: "JP",
             type: "select",
             // "include-all": true,
-            icon: "https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/JP.png",
+            icon: "https://p-smith.com/service-icon/factory.svg",
             proxies: ["手动切换", "特殊", "节点选择", "下载节点", "香港节点", "台湾节点", "狮城节点", "日本节点", "美国节点", "韩国节点", "其它地区", "DIRECT",],
         },
         {
             name: "JAV",
             type: "select",
             // "include-all": true,
-            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Heart.png",
+            icon: "https://c0.jdbstatic.com/images/logo_120x120.png",
             proxies: ["手动切换", "节点选择", "特殊", "下载节点", "香港节点", "台湾节点", "狮城节点", "日本节点", "美国节点", "韩国节点", "其它地区", "DIRECT",],
         },
         {
             name: "PIKPAK",
             type: "select",
             // "include-all": true,
-            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/VIP.png",
+            icon: "https://raw.githubusercontent.com/Rooil/Clash-Verge-JS/refs/heads/main/Pikpak.svg",
             proxies: ["DIRECT", "节点选择", "手动切换", "下载节点", "香港节点", "台湾节点", "狮城节点", "其它节点",],
         },
         {
@@ -1223,7 +1223,7 @@ function overwriteProxyGroups (params) {
             type: "select",
             proxies: ["节点选择","自动选择", "手动切换", "香港节点", "日本节点", "韩国节点", "狮城节点", "台湾节点", "其它节点",],
             // "include-all": true,
-            icon: "https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/GAME.png"
+            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png"
         },
         {
             name: "哔哩哔哩",
@@ -1258,7 +1258,7 @@ function overwriteProxyGroups (params) {
             type: "select",
             proxies: ["节点选择", "自动选择", "节点选择", "手动切换", "香港节点", "日本节点", "韩国节点", "狮城节点", "台湾节点", "其它节点",],
             // "include-all": true,
-            icon: "https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/Google.png"
+            icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png"
         },
         {
             name: "网易音乐",
