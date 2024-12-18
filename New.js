@@ -845,7 +845,7 @@ function overwriteProxyGroups (params) {
             type: "select",
             url: "https://cp.cloudflare.com",
             icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Rocket.png",
-            proxies: ["手动切换", "自动选择", "DIRECT", "故障转移", "延迟最低", "负载均衡", "下载节点", "香港节点", "台湾节点", "狮城节点", "日本节点", "美国节点", "韩国节点", "其它地区",],
+            proxies: ["手动切换", "自动选择", "故障转移", "延迟最低", "负载均衡", "DIRECT", "香港手动", "日本手动", "韩国手动",  "狮城手动", "美国手动", "台湾手动", "其它地区", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
         },
         {
             name: "手动切换",
@@ -860,7 +860,7 @@ function overwriteProxyGroups (params) {
             url: "https://cp.cloudflare.com",
             interval: 300,
             tolerance: 50,
-            proxies: ["下载节点",],
+            proxies: [...allProxies,],
         },
         {
             name: "延迟最低",
@@ -916,14 +916,14 @@ function overwriteProxyGroups (params) {
             type: "select",
             // "include-all": true,
             icon: "https://siriling.github.io/my-icons/dist/icon/JavTube.png",
-            proxies: ["手动切换", "节点选择", "下载节点", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点", "DIRECT",],
+            proxies: ["手动切换", "节点选择", "下载节点", "香港手动", "日本手动", "韩国手动",  "狮城手动", "美国手动", "台湾手动", "其它地区", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点", "DIRECT",],
         },
         {
             name: "PIKPAK",
             type: "select",
             // "include-all": true,
             icon: "https://siriling.github.io/my-icons/dist/icon/Pikpak.png",
-            proxies: ["DIRECT", "节点选择", "手动切换", "下载节点", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
+            proxies: ["DIRECT", "节点选择", "手动切换", "下载节点", "香港手动", "日本手动", "韩国手动",  "狮城手动", "美国手动", "台湾手动", "其它地区",],
         },
         {
             name: "电报消息",
@@ -956,14 +956,14 @@ function overwriteProxyGroups (params) {
         {
             name: "油管视频",
             type: "select",
-            proxies: ["节点选择", "手动切换", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
+            proxies: ["节点选择", "手动切换", "奈飞节点",  "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
             // "include-all": true,
             icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png"
         },
         {
             name: "奈飞视频",
             type: "select",
-            proxies: ["节点选择", "手动切换", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
+            proxies: [ "奈飞节点", "节点选择", "手动切换", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
             // "include-all": true,
             icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png"
         },
@@ -984,7 +984,7 @@ function overwriteProxyGroups (params) {
         {
             name: "国外媒体",
             type: "select",
-            proxies: ["节点选择", "手动切换", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
+            proxies: ["节点选择", "手动切换",  "香港手动", "日本手动", "韩国手动",  "狮城手动", "美国手动", "台湾手动", "其它地区",],
             // "include-all": true,
             icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png"
         },
@@ -998,21 +998,21 @@ function overwriteProxyGroups (params) {
         {
             name: "谷歌CN",
             type: "select",
-            proxies: ["DIRECT", "自动选择", "节点选择", "手动切换", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
+            proxies: ["DIRECT", "自动选择", "节点选择", "手动切换", "香港手动", "日本手动", "韩国手动",  "狮城手动", "美国手动", "台湾手动", "其它地区", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
             // "include-all": true,
             icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png"
         },
         {
             name: "谷歌",
             type: "select",
-            proxies: ["节点选择", "自动选择", "手动切换", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
+            proxies: ["节点选择", "自动选择", "手动切换", "香港手动", "日本手动", "韩国手动",  "狮城手动", "美国手动", "台湾手动", "其它地区", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
             // "include-all": true,
             icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png"
         },
         {
             name: "亚马逊",
             type: "select",
-            proxies: ["节点选择", "自动选择", "手动切换", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
+            proxies: ["节点选择", "自动选择", "手动切换", "香港手动", "日本手动", "韩国手动",  "狮城手动", "美国手动", "台湾手动", "其它地区", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
             // "include-all": true,
             icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Amazon.png"
         },
@@ -1033,7 +1033,7 @@ function overwriteProxyGroups (params) {
         {
             name: "漏网之鱼",
             type: "select",
-            proxies: ["节点选择", "DIRECT", "手动切换", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
+            proxies: ["节点选择", "DIRECT", "手动切换", "香港手动", "日本手动", "韩国手动",  "狮城手动", "美国手动", "台湾手动", "其它地区", "香港节点", "狮城节点", "台湾节点", "日本节点", "韩国节点", "美国节点", "其它节点",],
             // "include-all": true,
             icon: "https://www.clashverge.dev/assets/icons/fish.svg"
         },
